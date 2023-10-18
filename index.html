@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="message hidden">
+    <p class="message-context">Player 1 is winner</p>
+  </div>
+  <div class="container">
+    <button class="btn new-game">🔃 new game</button>
+    <div class="dice-section">
+      <img src="./imgs/dice-1.png" alt="Dice" class="dice">
+    </div>
+    <button class="btn roll-dice">🎲 roll dice</button>
+    <button class="btn hold"> 📥 hold</button>
+    <div class="left player--active">
+      <div class="header">
+        <p class="player">Player 1</p>
+        <p class="hold-score score--1">40</p>
+      </div>
+      <div class="footer">
+        <p class="current">Current</p>
+        <p class="current-no current--1">0</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="header">
+        <p class="player">mazyar ai</p>
+        <p class="hold-score score--2">50</p>
+      </div>
+      <div class="footer">
+        <p class="current">Current</p>
+        <p class="current-no current--2">0</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

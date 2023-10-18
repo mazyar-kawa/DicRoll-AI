@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+}
+
+body > .message {
+  position: absolute;
+  background-color: #00fc00;
+  padding: 0.5rem 2rem;
+  bottom: 2%;
+  right: 2%;
+  color: black;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(39, 39, 39, 0.5);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 70%;
+  height: 80%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.container > .left,
+.right {
+  background-color: rgba(255, 255, 255, 0.35);
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px 0px 0 8px;
+}
+
+.container > .right {
+  border-radius: 0 8px 8px 0;
+}
+
+.container > .player--active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.container > .left > .header,
+.right > .header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container > .left > .header > .player,
+.right > .header > .player {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+}
+
+.container > .left > .header > .hold-score,
+.right > .header > .hold-score {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: auto;
+}
+
+.container > .left > .footer,
+.right > .footer {
+  background-color: #c7365f;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 40%;
+  padding: 1rem 0;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.container > .left > .footer > .current,
+.right > .footer > .current {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.container > .left > .footer > .current-no,
+.right > .footer > .current-no {
+  color: #ddd;
+  font-size: 1.5rem;
+}
+
+.container > .btn {
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  position: absolute;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 100%);
+  font-size: 18px;
+  cursor: pointer;
+}
+.container > .dice-section {
+  position: absolute;
+  top: 25%;
+  right: 23.5%;
+}
+.container > .dice-section > .dice {
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 100%);
+  width: 30%;
+  height: 30%;
+}
+
+.container > .new-game {
+  top: 5%;
+  right: 41%;
+}
+
+.container > .roll-dice {
+  bottom: 25%;
+  right: 41%;
+}
+.container > .hold {
+  bottom: 10%;
+  right: 42.5%;
+}
+
+.hidden {
+  display: none;
+}
